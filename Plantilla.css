@@ -1,0 +1,131 @@
+/** CSS Basico para la plantilla **/
+
+head {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    font-size: 1.6rem;
+}
+
+@font-face {
+    font-family: "fuente1";
+    src: url(./Fonts/Milky\ Cookies\ Script\ Demo.otf);
+}
+
+/** Colores y Diseños Pagina Web **/
+
+.colortienda {
+    color: cyan;
+}
+
+.font {
+    font-family: "fuente1";
+}
+
+/** Titulo **/
+header .titulo1 {
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+.titulo2{
+    font-size: 3rem;
+}
+
+/** Diseño Menú **/
+
+.menu{
+    overflow: hidden;
+    background-color: #333;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu a {
+    float: left;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    width: 7rem;
+}
+
+.submenu{
+    float: left;
+    overflow: hidden;
+}
+
+.boton{
+    padding: 0.4rem;
+}
+
+.submenu .boton{
+    font-size: 0.7rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: auto;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.menu a:hover, .submenu:hover .boton { 
+    background-color: cyan;
+    color: black;
+}
+
+.boton-contenido{
+    display: none;
+    position: absolute;
+    left: 0;
+    color: black;
+    background-color: cyan;
+    width: 75%;
+    margin: auto 12.5%;
+    z-index: 1;
+}
+
+.boton-contenido a{
+    float: left;
+    color: black;
+    text-decoration: none;
+}
+
+.boton-contenido a:hover {
+    background-color: #eee;
+    color: black;
+    /**.menu a{
+        color: black;
+    }**/
+}
+
+.submenu:hover .boton-contenido {
+    display: block;
+}
+
+/** Tamaño letra **/
+p{font-size: 1rem;}
+.content > h4{font-size: 1rem;}
+.btn{font-size: 1rem;}
+table, th, td{font-size: 1rem;}
+li, dt, dd{font-size: 1.2rem;}
+h3, h4{font-size: 1.5rem;}
+
+@media (max-width:65rem) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+    }
+    .submenu:hover .boton-contenido {
+        display: none;
+    }
+}

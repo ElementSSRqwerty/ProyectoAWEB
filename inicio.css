@@ -1,0 +1,56 @@
+/** CSS extra para la pagina de inicio
+body{
+    height: 100rem;
+}**/
+/** Imgagenes de fondo **/
+.img-fondo{
+    background-image: url(./Imagenes/IMG-20241122-WA0002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 25rem;
+    margin-top: 2.8rem;
+    margin-bottom: 1rem;
+}
+/** Primer apartado: Productos **/
+.Productos{
+    width: 80%;
+    margin: auto;
+}
+.Productos-titulo{
+    text-align: center;
+}
+.columnas{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto 2rem auto;
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 0.2rem dotted black;
+}
+.textos{
+    font-size: 1rem;
+}.Img-txt img{
+    height: 13rem;
+    width: 20rem;
+    box-shadow: 0.5rem 0.5rem 1rem black;
+}
+/** Tabla de Horario**/
+.horario{
+    width: 80%;
+    margin: auto;
+}
+.horario h3{
+    text-align: center;
+}
+
+@media (max-width:65rem) {
+    .columnas{
+        display: flex;
+        flex-direction: column;
+    }
+    .Img-txt img{
+        width: 15rem;
+    }
+}

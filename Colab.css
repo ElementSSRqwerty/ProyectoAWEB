@@ -1,0 +1,53 @@
+/** CSS lista desordenada **/
+.listadef{
+    width: 60%;
+    margin: auto;
+}
+dd{
+    width: 90%;
+    margin: auto;
+}
+dt{
+    font-weight: bold;
+    color: rgb(208, 176, 255);
+    text-decoration: dotted underline;
+}
+dt, dd{
+    font-size: 60%;
+}
+a{
+    font-size: 100%;
+    text-decoration: none;
+}
+
+/** CSS seccion videos **/
+section{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+section h2{
+    text-align: center;
+}
+section iframe, section video{
+    width: 20rem;
+    height: 10rem;
+}
+section iframe{float: left;}
+section video{float: right;}
+/** CSS para audio en el bottom **/
+footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+@media (max-width:65rem) {
+    section iframe{
+        margin-left: 1rem;
+        float: none;
+    }
+    section video{
+        margin-left: 1rem;
+        float: none;
+    }
+}
